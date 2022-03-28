@@ -13,7 +13,7 @@
 
 extern "C"
 {
-#include "cray_tools_fe.h"
+#include "common_tools_fe.h"
 }
 
 #include "mrnet/Network.h"
@@ -25,9 +25,6 @@ namespace MRN
 class XTNetwork : public Network
 {
 private:
-
-    static int GetLocalNid(void);
-    static std::string GetNodename(int nid);
 
     // FE support
     cti_app_id_t ctiApid;
